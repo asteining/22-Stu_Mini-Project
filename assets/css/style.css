@@ -55,7 +55,7 @@ footer {
 section { 
   padding: 80px 10px 40px 10px; /* Adjusted top padding for fixed header */
   background-color: gray;
-  border-top: 3px solid #DDAF94;
+  border-top: 3px solid #00BCD4;
 }
 
 
@@ -64,7 +64,7 @@ section {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 100%; /* Ensures responsiveness */
+  max-width: 30%; /* Ensures responsiveness */
   height: auto;
 }
 
@@ -74,9 +74,9 @@ form {
   width: 100%;
   max-width: 500px; /* Ensures the form doesn't exceed its container */
   padding: 10px;
-  border: 5px solid #DDAF94;
+  border: 5px solid black;
   border-radius: 20px;
-  background-color: #FDF8F5; /* Added background color for better visibility */
+  background-color: tan; /* Added background color for better visibility */
 }
 
 label {
@@ -112,4 +112,16 @@ button {
 button:hover {
   background-color: #333; /* Added hover effect for better interaction */
 }
+
+/* ID-Styling */
+footer {
+  font-size: medium;
+  font-style: italic;
+}
+
+#description {
+  position: relative;
+  left: 760px
+}
+
 
