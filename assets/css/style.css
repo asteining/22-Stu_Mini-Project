@@ -124,4 +124,55 @@ footer {
   left: 760px
 }
 
+/* Body Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Header Styles */
+#main-header {
+  padding: 20px 40px; /* Padding to give some space */
+  display: flex;
+  justify-content: center; /* Center the header content horizontally */
+  position: relative; /* So the navbar can be positioned absolutely within */
+  align-items: center; /* Vertically aligns title and navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+  position: absolute;
+  right: 40px; /* Positions the navbar to the right corner */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Displays list items inline */
+}
+
+.navbar ul li {
+  margin-left: 20px; /* Spacing between links */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #FDF8F5;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  color: #DDAF94;
+  transition: color 0.3s ease;
+}
+
+/* Title Styling */
+.site-title {
+  margin: 0;
+  color: #FDF8F5;
+  font-size: 28px;
+  text-align: center;
+}
