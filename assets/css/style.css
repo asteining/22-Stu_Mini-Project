@@ -1,113 +1,115 @@
 /* Universal Selector */
 * {
-  margin:0;
-  padding:0;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures consistent padding and border handling */
 }
 
 /* Element Selectors */
 body {
-  position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-family: "Times New Roman", Times, serif; /* Corrected fallback fonts */
   font-size: 20px;
   background-color: #FDF8F5;
-  color: #4F4846;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Enhances readability */
 }
 
-h1,
-h2 {
-  margin: 20px;
+/* Heading Selectors */
+h1, h2, h3 {
+  margin: 0;
+  text-align: center;
+  padding-top: 0px; /* Adds spacing without breaking structure */
 }
 
-main {
-  padding: 60px 0;
-}
-
-li {
-  display: inline;
-  padding: 0px 20px;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: #FDF8F5;
-}
-
+/* Header and Footer */
 header,
 footer {
   height: 60px;
   width: 100%;
   line-height: 60px;
-  background-color: #266150;
+  background-color: #03A9F4;
+  text-align: center;
 }
 
 header {
-  position: fixed;
-  border-bottom: 10px solid #DDAF94;
+  position: fixed; /* Using fixed position for better usability */
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 10px solid #00bcd4;
+  z-index: 1000; /* Ensures header stays on top */
 }
 
 footer {
-  position: absolute;
-  margin-top: 0;
+  position: fixed; /* Fixed position to keep footer at the bottom */
   bottom: 0;
-  border-bottom: 10px solid #4F4846;
-  color: #FDF8F5;    
+  left: 0;
+  right: 0;
+  border-top: 10px solid #4F4846; /* Corrected to border-top */
+  color: #FDF8F5;
 }
 
-figure {
-  margin-bottom: 40px;
+/* Section Styling */
+section { 
+  padding: 80px 10px 40px 10px; /* Adjusted top padding for fixed header */
+  background-color: gray;
+  border-top: 3px solid #DDAF94;
 }
+
+
+/* Image Styling */
 
 img {
   display: block;
-  margin: 20px auto;
-}
-
-section {
-  margin-bottom: 0;
-  padding: 20px 10px 40px 10px;
-  border-top: 3px solid #DDAF94;
-  background-color:  #E8CEBF;
-}
-
-form {
-  /* Center the form on the page */
   margin: 0 auto;
-  width: 500px;
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto;
+}
+
+/* Form Styling */
+form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px; /* Ensures the form doesn't exceed its container */
   padding: 10px;
   border: 5px solid #DDAF94;
   border-radius: 20px;
+  background-color: #FDF8F5; /* Added background color for better visibility */
 }
 
 label {
   display: inline-block;
   width: 100px;
 }
-  
+
+/* Input and Textarea */
 input, 
 textarea {
-  box-sizing: border-box;
-  width: 300px;
+  width: 100%; /* Ensure inputs and textareas span their container */
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #4F4846;
 }
 
 textarea {
-  vertical-align: top;
-  height: 60px;
+  height: 100px; /* Increased height for better usability */
 }
-  
+
+/* Button Styling */
 button {
   height: 40px;
   width: 120px;
   background-color: #4F4846;
   color: #FDF8F5;
-}
- 
-/* Class Selectors */
-.text-center {
-  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.text-right {
-  text-align: right;
+button:hover {
+  background-color: #333; /* Added hover effect for better interaction */
 }
+
